@@ -477,5 +477,21 @@ bsCollapse.hide();
 
 </script>
 
+<script>
+
+/* limpiar formulario después de enviar */
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function(){
+
+setTimeout(function(){
+form.reset();
+}, 500);
+
+});
+
+</script>
+
 </body>
 </html>
